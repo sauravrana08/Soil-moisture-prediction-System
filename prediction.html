@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('C:\Users\Harshit\OneDrive\Desktop\Crop-Recommendation-system--main\Crop recommendation system\crop_app\templates\image.jpg'); /* Set background image */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .prediction-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            font-size: 28px;
+            text-align: center;
+            color: #333;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .sub-heading {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .prediction {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .crop {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="prediction-container">
+        <h2 class="heading">Crop Recommendation</h2>
+        <div class="content">
+            <h3 class="sub-heading">According to your soil nutrients:</h3>
+            <div class="prediction">
+                <p class="crop">{{prediction}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
